@@ -1,0 +1,17 @@
+{
+  "name": "ephemeral-design-system",
+  "version": "1.0.0",
+  "description": "ephemeral school magazine design system documentation",
+  "main": "index.js",
+  "author": "KnowsCount <knowscount@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@vuepress/plugin-active-header-links": "^1.8.2",
+    "vitepress": "^0.20.4"
+  },
+  "scripts": {
+    "docs:dev": "vitepress dev docs",
+    "docs:build": "vitepress build docs",
+    "docs:serve": "vitepress serve docs"
+  }
+}
