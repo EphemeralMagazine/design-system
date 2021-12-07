@@ -1,0 +1,21 @@
+name: cd
+
+on: push
+
+jobs:
+    build:
+        runs-on: ubuntu-latest
+
+        steps:
+            - name: executing remote ssh commands using password
+              uses: appleboy/ssh-action@master
+              with:
+                  host: ${{ secrets.HOST }}
+                  username: ${{ secrets.USERNAME }}
+                  password: ${{ secrets.PASSWORD }}
+                  port: ${{ secrets.PORT }}
+                  script: |
+                      cd ${{ secrets.PATH }}
+                      sudo git clone https://${{ secrets.TOKEN }}@github.com/EphemeralMagazine/design-system.git
+                      echo ${{ secrets.PASSWORD }} | sudo -S yarn
+                      echo ${{ secrets.PASSWORD }} | sudo -S yarn docs:build
