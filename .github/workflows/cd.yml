@@ -16,6 +16,7 @@ jobs:
                   port: ${{ secrets.PORT }}
                   script: |
                       cd ${{ secrets.PATH }}
-                      sudo git clone https://${{ secrets.TOKEN }}@github.com/EphemeralMagazine/design-system.git
+                    #   sudo git clone https://${{ secrets.TOKEN }}@github.com/EphemeralMagazine/design-system.git
+                      sudo git pull
                       echo ${{ secrets.PASSWORD }} | sudo -S yarn
                       echo ${{ secrets.PASSWORD }} | sudo -S yarn docs:build
