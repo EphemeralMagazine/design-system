@@ -30,6 +30,9 @@ module.exports = {
 function getSidebar() {
 	return [
 		{
+			children: [{ text: '为什么要设计系统', link: '/why/' }],
+		},
+		{
 			text: '官网',
 			children: [{ text: '总览', link: '/website/' }],
 			sidebarDepth: 3,
@@ -37,8 +40,8 @@ function getSidebar() {
 		{
 			text: '杂志',
 			children: [
-				{ text: '基础', link: '/magazine/' },
-				{ text: '进阶', link: '/magazine/advanced' },
+				{ text: '设计', link: '/magazine/' },
+				{ text: '排版', link: '/magazine/typesetting' },
 			],
 		},
 		{

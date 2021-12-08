@@ -10,5 +10,5 @@ features:
       details: 统一的平面设计风格、排版，以及一些示例。
     - title: 其他
       details: 杂项内容，如阅读材料推荐。
-footer: MIT Licensed | Copyright©EphemeralMagazine · KnowsCount
+footer: Copyright©EphemeralMagazine · KnowsCount
 ---
