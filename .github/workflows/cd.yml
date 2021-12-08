@@ -16,6 +16,6 @@ jobs:
                   port: ${{ secrets.PORT }}
                   script: |
                       cd ${{ secrets.PATH }}
-                      sudo git pull
+                      echo ${{ secrets.PASSWORD }} | sudo -S git pull
                       echo ${{ secrets.PASSWORD }} | sudo -S yarn
                       echo ${{ secrets.PASSWORD }} | sudo -S yarn docs:build
