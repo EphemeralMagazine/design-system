@@ -1,6 +1,6 @@
 ---
 home: true
-heroImage: /public/logo.png
+heroImage: /img/logo.png
 actionText: 为什么要设计文档？ →
 actionLink: /why/
 features:
